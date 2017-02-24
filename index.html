@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fragments</title>
+
+	<style type="text/css">
+		header{
+			width: 100%;
+		    height: 4rem;
+		    background: rgba(65, 156, 96, 0.57);
+		    padding-top: 2rem;
+		    text-align: center;
+		    color: #666;
+		    font-weight: bolder;
+		    font-size: xx-large;
+		}
+		.content{
+			background: rgba(150, 208, 150, 0.28);
+		    width: 80%;
+		    height: 30rem;
+		    margin: auto;
+		    margin-top: 2rem;
+		    border-radius: 25px;
+		}
+
+		.edit{
+			position: absolute;
+		    width: 70%;
+		    height: 23rem;
+		    margin-left: 4.5%;
+		    margin-top: 2rem;
+		    margin-top: 2rem;
+		    background: #ffffff;
+		    border-radius: 5px;
+		}
+		.options{
+			position: absolute;
+		    /* display: inline; */
+		    width: 80%;
+		    /*background: antiquewhite;*/
+		    height: 8rem;
+		    margin-top: 24rem;
+		}
+		ul{
+		    list-style: none;
+		    width: 60%;
+		    margin: auto;
+		    margin-top: 2.5rem;
+		    height: 2.5rem;
+		    /*background: blueviolet;*/
+		}
+		li {
+		    float: left;
+		    width: 33%;
+		    height: 2.5rem;
+		    /*background: aliceblue;*/
+/*		    border: 1px solid;*/
+   		}
+   		li button{
+   			width: 60%;
+		    height: 2.5rem;
+		    border: darkseagreen solid 1px;
+		    border-radius: 5px;
+		    background: #fff;
+		    color: darkseagreen;
+		    font-size: 16px;
+   		}
+
+   		li button:hover{
+   			width: 60%;
+		    height: 2.5rem;
+		    border: none;
+		    border-radius: 5px;
+		    background: darkseagreen;
+		    color: #ffffff;
+		    font-size: 16px;
+   		}
+		input[type=title]{
+		    position: absolute;
+		    width: 98%;
+		    /* left: 10%; */
+		    height: 3rem;
+		    border: none;
+		    border-bottom: darkgreen solid 1px;
+		    border-radius: 5px;
+		    padding-left: 10px;
+		    font-size: 24px;
+		    font-weight: lighter;
+		}
+
+		#text {
+		    position: absolute;
+		    width: 98%;
+		    /* left: 10%; */
+		    top: 5rem;
+		    height: 18rem;
+		    border: none;
+		    border-radius: 5px;
+		    padding-left: 10px;
+		    font-size: 24px;
+		    font-weight: lighter;
+		}
+
+		footer{
+			position: relative;
+		    height: 7rem;
+		    top: 3rem;
+		    padding-top: 3rem;
+		    background: #c0c0c0;
+		    text-align: center;
+		    color: #3e826b;
+		}
+
+		footer a {
+			color: #257128;
+    		text-decoration: none;
+		}
+		footer a:hover {
+			color: #89ef8d;
+    		text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+	Fragments
+</header>
+<div class="content">
+	<div class="edit">
+		<input type="title" name="" placeholder="标题">
+		<textarea id="text" placeholder="内容"></textarea>		
+	</div>
+
+	<div class="options">
+		<ul>
+			<li><button>添加</button></li>
+			<li><button>编辑</button></li>	
+			<li><button>删除</button></li>					
+		</ul>
+	
+	</div>	
+</div>
+<footer>
+	Github地址：
+	<a href="https://github.com/tuzilingdang/note-app.git">https://github.com/tuzilingdang/note-app.git</a>
+</footer>
+
+</body>
+
+</html>
