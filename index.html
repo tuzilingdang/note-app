@@ -4,6 +4,8 @@
 	<title>Fragments</title>
 
 	<style type="text/css">
+		body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}  
+		ol,li,ul{margin:0; padding:0;}
 		header{
 			width: 100%;
 		    height: 4rem;
@@ -14,32 +16,44 @@
 		    font-weight: bolder;
 		    font-size: xx-large;
 		}
-		.content{
-			background: rgba(150, 208, 150, 0.28);
-		    width: 80%;
-		    height: 30rem;
+		#content{
+			background: white;
+		    width: 100%;
+		    height: 32rem;
 		    margin: auto;
-		    margin-top: 2rem;
 		    border-radius: 25px;
+		}
+		.variable-content{
+		    position: absolute;
+		    padding-bottom: 1rem;
+		    padding-top: 1rem;
+		    background: rgba(150, 208, 150, 0.28);
+		    width: 80%;
+		    left: 10%;
+		    min-height: 10rem;
+		    height: auto;
+		    margin-top: 2rem;
+		    border-radius: 25px;			
 		}
 
 		.edit{
-			position: absolute;
+		    position: relative;
 		    width: 70%;
-		    height: 23rem;
-		    margin-left: 4.5%;
+		    height: auto;
+		    left: 15%;
+		    /* margin-left: 4.5%; */
 		    margin-top: 2rem;
-		    margin-top: 2rem;
+		    /* margin-top: 2rem; */
 		    background: #ffffff;
 		    border-radius: 5px;
 		}
 		.options{
-			position: absolute;
+		    position: relative;
 		    /* display: inline; */
 		    width: 80%;
-		    /*background: antiquewhite;*/
-		    height: 8rem;
-		    margin-top: 24rem;
+		    left: 10%;
+		    /* background: antiquewhite; */
+		    height: 3rem;
 		}
 		ul{
 		    list-style: none;
@@ -76,7 +90,7 @@
 		    font-size: 16px;
    		}
 		input[type=title]{
-		    position: absolute;
+		    position: relative;
 		    width: 98%;
 		    /* left: 10%; */
 		    height: 3rem;
@@ -89,11 +103,11 @@
 		}
 
 		#text {
-		    position: absolute;
+		    position: relative;
 		    width: 98%;
 		    /* left: 10%; */
-		    top: 5rem;
-		    height: 18rem;
+		    top: 1rem;
+		    height: 14rem;
 		    border: none;
 		    border-radius: 5px;
 		    padding-left: 10px;
@@ -102,9 +116,9 @@
 		}
 
 		footer{
-			position: relative;
+		    position: relative;
+		    width: 100%;
 		    height: 7rem;
-		    top: 3rem;
 		    padding-top: 3rem;
 		    background: #c0c0c0;
 		    text-align: center;
@@ -123,28 +137,76 @@
 </head>
 
 <body>
-<header>
-	Fragments
-</header>
-<div class="content">
-	<div class="edit">
-		<input type="title" name="" placeholder="标题">
-		<textarea id="text" placeholder="内容"></textarea>		
-	</div>
+<header>Fragments</header>
 
-	<div class="options">
-		<ul>
-			<li><button>添加</button></li>
-			<li><button>编辑</button></li>	
-			<li><button>删除</button></li>					
-		</ul>
+<div id="content">
+
 	
-	</div>	
 </div>
+
 <footer>
 	Github地址：
 	<a href="https://github.com/tuzilingdang/note-app.git">https://github.com/tuzilingdang/note-app.git</a>
 </footer>
+
+<script id="indexTemplate" type="text/x-handlebars-template">
+	<div class="variable-content">
+		<div class="options">
+			<ul>
+				<li><button class="add">添加</button></li>					
+			</ul>	
+		</div>
+
+		<% _.each(notes, function (note) { %>
+		  <dl class="dl-horizontal">
+		    <dt>Title</dt>
+		    <dd><%= note.title %></dd>
+		    <dt>Content</dt>
+		    <dd><%= note.content %></dd>
+		    <dt>&nbsp;</dt>
+		    <dd>
+		      <button class="edit">编辑</button>
+		      <button class="del">删除</button>
+		    </dd>
+		  </dl>
+		<% }); %>
+	</div>
+</script>
+
+<script id="editTemplate" type="text/x-handlebars-template">
+	<div class="variable-content">
+		<div class="edit">
+			<input type="title" name="title" placeholder="标题">
+			<textarea id="text" name="content" placeholder="内容"></textarea>		
+		</div>
+
+		<div class="options">
+			<ul>
+				<li><button class="save">保存</button></li>
+				<li><button>编辑</button></li>	
+				<li><button>删除</button></li>					
+			</ul>	
+		</div>	
+	</div>
+</script>
+
+<script type="text/javascript" src="./libs/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="./libs/underscore-1.8.3.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+<!-- <script type="text/javascript" src="./libs/backbone.js"></script> -->
+<script type="text/javascript" src="./libs/handlebars-v4.0.5.js"></script>
+
+<script type="text/javascript" src="./view/index.js"></script>
+<script type="text/javascript" src="./view/add.js"></script>
+<script type="text/javascript" src="./router.js"></script>
+<script type="text/javascript" src="./model.js"></script>
+<script>
+	var app = new APP.NoteRouter();
+</script>
+
+
+
 
 </body>
 

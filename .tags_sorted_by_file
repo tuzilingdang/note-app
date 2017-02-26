@@ -1,0 +1,107 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+Backbone.ajax	libs/backbone.js	/^  Backbone.ajax = function() {$/;"	f
+Backbone.noConflict	libs/backbone.js	/^  Backbone.noConflict = function() {$/;"	f
+Backbone.sync	libs/backbone.js	/^  Backbone.sync = function(method, model, options) {$/;"	f
+Backbone.sync.params.dataType	libs/backbone.js	/^    var params = {type: type, dataType: 'json'};$/;"	p
+Backbone.sync.params.type	libs/backbone.js	/^    var params = {type: type, dataType: 'json'};$/;"	p
+addOptions.add	libs/backbone.js	/^  var addOptions = {add: true, remove: false};$/;"	p
+addOptions.remove	libs/backbone.js	/^  var addOptions = {add: true, remove: false};$/;"	p
+args	libs/backbone.js	/^      var args = slice.call(arguments, 1);$/;"	v
+array	libs/backbone.js	/^  var array = [];$/;"	v
+attributeMethods	libs/backbone.js	/^  var attributeMethods = ['groupBy', 'countBy', 'sortBy', 'indexBy'];$/;"	v
+delegateEventSplitter	libs/backbone.js	/^  var delegateEventSplitter = \/^(\\S+)\\s*(.*)$\/;$/;"	v
+error	libs/backbone.js	/^    var error = options.error;$/;"	v
+eventSplitter	libs/backbone.js	/^  var eventSplitter = \/\\s+\/;$/;"	v
+eventsApi	libs/backbone.js	/^  var eventsApi = function(obj, action, name, rest) {$/;"	f
+id	libs/backbone.js	/^      var id = obj._listenId || (obj._listenId = _.uniqueId('l'));$/;"	v
+methodMap.create	libs/backbone.js	/^    'create': 'POST',$/;"	p
+methodMap.delete	libs/backbone.js	/^    'delete': 'DELETE',$/;"	p
+methodMap.patch	libs/backbone.js	/^    'patch':  'PATCH',$/;"	p
+methodMap.read	libs/backbone.js	/^    'read':   'GET'$/;"	p
+methodMap.update	libs/backbone.js	/^    'update': 'PUT',$/;"	p
+methods	libs/backbone.js	/^  var methods = ['forEach', 'each', 'map', 'collect', 'reduce', 'foldl',$/;"	v
+modelMethods	libs/backbone.js	/^  var modelMethods = ['keys', 'values', 'pairs', 'invert', 'pick', 'omit', 'chain', 'isEmpty'];$/;"	v
+namedParam	libs/backbone.js	/^  var namedParam    = \/(\\(\\?)?:\\w+\/g;$/;"	v
+names	libs/backbone.js	/^      var names = name ? [name] : _.keys(this._events);$/;"	v
+once	libs/backbone.js	/^      var once = _.once(function() {$/;"	v
+optionalParam	libs/backbone.js	/^  var optionalParam = \/\\((.*?)\\)\/g;$/;"	v
+options.beforeSend	libs/backbone.js	/^      options.beforeSend = function(xhr) {$/;"	f
+options.error	libs/backbone.js	/^    options.error = function(xhr, textStatus, errorThrown) {$/;"	f
+remaining	libs/backbone.js	/^        var remaining = [];$/;"	v
+setOptions.add	libs/backbone.js	/^  var setOptions = {add: true, remove: true, merge: true};$/;"	p
+setOptions.merge	libs/backbone.js	/^  var setOptions = {add: true, remove: true, merge: true};$/;"	p
+setOptions.remove	libs/backbone.js	/^  var setOptions = {add: true, remove: true, merge: true};$/;"	p
+slice	libs/backbone.js	/^  var slice = array.slice;$/;"	v
+triggerEvents	libs/backbone.js	/^  var triggerEvents = function(events, args) {$/;"	f
+viewOptions	libs/backbone.js	/^  var viewOptions = ['model', 'collection', 'el', 'id', 'attributes', 'className', 'tagName', 'events'];$/;"	v
+xhr	libs/backbone.js	/^    var xhr = options.xhr = Backbone.ajax(_.extend(params, options));$/;"	v
+Compiler	libs/handlebars-v4.0.5.js	/^	Compiler.prototype = {$/;"	c
+Compiler	libs/handlebars-v4.0.5.js	/^	function Compiler() {}$/;"	f
+Compiler.compiler	libs/handlebars-v4.0.5.js	/^	  compiler: Compiler,$/;"	p
+SourceLocation	libs/handlebars-v4.0.5.js	/^	function SourceLocation(source, locInfo) {$/;"	c
+SourceLocation.end.line	libs/handlebars-v4.0.5.js	/^	    line: locInfo.last_line,$/;"	p
+SourceLocation.start.line	libs/handlebars-v4.0.5.js	/^	    line: locInfo.first_line,$/;"	p
+Visitor	libs/handlebars-v4.0.5.js	/^	function Visitor() {$/;"	c
+Visitor.constructor	libs/handlebars-v4.0.5.js	/^	  constructor: Visitor,$/;"	p
+Visitor.mutating	libs/handlebars-v4.0.5.js	/^	  mutating: false,$/;"	p
+WhitespaceControl	libs/handlebars-v4.0.5.js	/^	function WhitespaceControl() {$/;"	c
+WhitespaceControl.BlockStatement	libs/handlebars-v4.0.5.js	/^	WhitespaceControl.prototype.BlockStatement = WhitespaceControl.prototype.DecoratorBlock = WhitespaceControl.prototype.PartialBlockStatement = function (block) {$/;"	m
+WhitespaceControl.Decorator	libs/handlebars-v4.0.5.js	/^	WhitespaceControl.prototype.Decorator = WhitespaceControl.prototype.MustacheStatement = function (mustache) {$/;"	m
+WhitespaceControl.PartialStatement	libs/handlebars-v4.0.5.js	/^	WhitespaceControl.prototype.PartialStatement = WhitespaceControl.prototype.CommentStatement = function (node) {$/;"	m
+WhitespaceControl.Program	libs/handlebars-v4.0.5.js	/^	WhitespaceControl.prototype.Program = function (program) {$/;"	m
+_ast	libs/handlebars-v4.0.5.js	/^	var _ast = __webpack_require__(21);$/;"	v
+_ast2	libs/handlebars-v4.0.5.js	/^	var _ast2 = _interopRequireDefault(_ast);$/;"	v
+_exception	libs/handlebars-v4.0.5.js	/^	var _exception = __webpack_require__(6);$/;"	v
+_exception2	libs/handlebars-v4.0.5.js	/^	var _exception2 = _interopRequireDefault(_exception);$/;"	v
+_interopRequireDefault	libs/handlebars-v4.0.5.js	/^	var _interopRequireDefault = __webpack_require__(1)['default'];$/;"	v
+_utils	libs/handlebars-v4.0.5.js	/^	var _utils = __webpack_require__(5);$/;"	v
+_visitor	libs/handlebars-v4.0.5.js	/^	var _visitor = __webpack_require__(25);$/;"	v
+_visitor2	libs/handlebars-v4.0.5.js	/^	var _visitor2 = _interopRequireDefault(_visitor);$/;"	v
+body	libs/handlebars-v4.0.5.js	/^	    var body = program.body,$/;"	v
+id	libs/handlebars-v4.0.5.js	/^	function id(token) {$/;"	f
+indent	libs/handlebars-v4.0.5.js	/^	    var indent = partial.indent || '';$/;"	v
+isBlockParam	libs/handlebars-v4.0.5.js	/^	    var isBlockParam = isSimple && !!this.blockParamIndex(sexpr.path.parts[0]);$/;"	v
+isEligible	libs/handlebars-v4.0.5.js	/^	    var isEligible = !isBlockParam && (isHelper || isSimple);$/;"	v
+isHelper	libs/handlebars-v4.0.5.js	/^	    var isHelper = !isBlockParam && _ast2['default'].helpers.helperExpression(sexpr);$/;"	v
+isNextWhitespace	libs/handlebars-v4.0.5.js	/^	function isNextWhitespace(body, i, isRoot) {$/;"	f
+isPrevWhitespace	libs/handlebars-v4.0.5.js	/^	function isPrevWhitespace(body, i, isRoot) {$/;"	f
+knownHelpers	libs/handlebars-v4.0.5.js	/^	    var knownHelpers = options.knownHelpers;$/;"	v
+loc.source	libs/handlebars-v4.0.5.js	/^	        source: firstLoc.source,$/;"	p
+name	libs/handlebars-v4.0.5.js	/^	    var name = path.parts[0],$/;"	v
+omitLeft	libs/handlebars-v4.0.5.js	/^	function omitLeft(body, i, multiple) {$/;"	f
+omitRight	libs/handlebars-v4.0.5.js	/^	function omitRight(body, i, multiple) {$/;"	f
+options.knownHelpers.blockHelperMissing	libs/handlebars-v4.0.5.js	/^	      'blockHelperMissing': true,$/;"	p
+options.knownHelpers.each	libs/handlebars-v4.0.5.js	/^	      'each': true,$/;"	p
+options.knownHelpers.helperMissing	libs/handlebars-v4.0.5.js	/^	      'helperMissing': true,$/;"	p
+options.knownHelpers.if	libs/handlebars-v4.0.5.js	/^	      'if': true,$/;"	p
+options.knownHelpers.log	libs/handlebars-v4.0.5.js	/^	      'log': true,$/;"	p
+options.knownHelpers.lookup	libs/handlebars-v4.0.5.js	/^	      'lookup': true$/;"	p
+options.knownHelpers.unless	libs/handlebars-v4.0.5.js	/^	      'unless': true,$/;"	p
+options.knownHelpers.with	libs/handlebars-v4.0.5.js	/^	      'with': true,$/;"	p
+params	libs/handlebars-v4.0.5.js	/^	    var params = partial.params;$/;"	v
+partialName	libs/handlebars-v4.0.5.js	/^	    var partialName = partial.name.original,$/;"	v
+prepareBlock	libs/handlebars-v4.0.5.js	/^	function prepareBlock(openBlock, program, inverseAndProgram, close, inverted, locInfo) {$/;"	f
+prepareMustache	libs/handlebars-v4.0.5.js	/^	function prepareMustache(path, params, hash, open, strip, locInfo) {$/;"	f
+preparePartialBlock	libs/handlebars-v4.0.5.js	/^	function preparePartialBlock(open, program, close, locInfo) {$/;"	f
+preparePath	libs/handlebars-v4.0.5.js	/^	function preparePath(data, parts, loc) {$/;"	f
+prepareProgram	libs/handlebars-v4.0.5.js	/^	function prepareProgram(statements, loc) {$/;"	f
+prepareRawBlock	libs/handlebars-v4.0.5.js	/^	function prepareRawBlock(openRawBlock, contents, close, locInfo) {$/;"	f
+prepareRawBlock.program.body	libs/handlebars-v4.0.5.js	/^	    body: contents,$/;"	p
+prepareRawBlock.program.strip	libs/handlebars-v4.0.5.js	/^	    strip: {},$/;"	p
+prepareRawBlock.program.type	libs/handlebars-v4.0.5.js	/^	    type: 'Program',$/;"	p
+program	libs/handlebars-v4.0.5.js	/^	    var program = block.program,$/;"	v
+program	libs/handlebars-v4.0.5.js	/^	    var program = partial.program;$/;"	v
+slice	libs/handlebars-v4.0.5.js	/^	var slice = [].slice;$/;"	v
+stripComment	libs/handlebars-v4.0.5.js	/^	function stripComment(comment) {$/;"	f
+stripFlags	libs/handlebars-v4.0.5.js	/^	function stripFlags(open, close) {$/;"	f
+validateClose	libs/handlebars-v4.0.5.js	/^	function validateClose(open, close) {$/;"	f
+var.errorNode.loc	libs/handlebars-v4.0.5.js	/^	    var errorNode = { loc: open.path.loc };$/;"	p
+var.strip.open	libs/handlebars-v4.0.5.js	/^	    open: block.openStrip.open,$/;"	p
+visitBlock	libs/handlebars-v4.0.5.js	/^	function visitBlock(block) {$/;"	c
+visitPartial	libs/handlebars-v4.0.5.js	/^	function visitPartial(partial) {$/;"	c
+visitSubExpression	libs/handlebars-v4.0.5.js	/^	function visitSubExpression(mustache) {$/;"	c
